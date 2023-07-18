@@ -1,0 +1,26 @@
+* {
+    font-family: $mainFont;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-image: url(../back/backround.jpeg);
+    background-attachment: local;
+}
+
+h1,
+h2 {
+    text-align: center;
+    $mainColor; 
+    font-size: 1, 4em;
+}
+
+p {
+    padding: 1em;
+    text-align: center;
+    color: aliceblue;
+    font-size: 1.4em;
+    line-height: 1.7;
+}

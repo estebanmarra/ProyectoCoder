@@ -1,0 +1,23 @@
+footer {
+    padding: 8px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer svg {
+    fill: whitesmoke;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+footer a {
+    display: flex;
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.2em;
+}
