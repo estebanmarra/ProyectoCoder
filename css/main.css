@@ -1,17 +1,68 @@
-/* Error: expected "(".
- *   ,
- * 1 | @import url ('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
- *   |            ^
- *   '
- *   scss\main.scss 1:12  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: expected \"(\".\a   \2577 \a 1 \2502  @import url ('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');\d\a   \2502             ^\a   \2575 \a   scss\\main.scss 1:12  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
+* {
+ 
+  box-sizing: border-box;
 }
+
+body {
+  background-image: url(../back/backround.jpeg);
+  background-attachment: local;
+}
+
+p {
+  padding: 1em;
+  text-align: center;
+  color: aliceblue;
+  font-size: 1.4em;
+  line-height: 1.7;
+}
+
+.botonera {
+  background-color: black;
+}
+
+.botoner img {
+  width: 150px;
+}
+
+.botonera img {
+  width: 150px;
+}
+
+.botonera {
+  background-color: rgba(234, 240, 115, 0.3);
+}
+
+.botonera a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1, 7;
+  padding: 16px;
+}
+
+footer {
+  padding: 8px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer svg {
+  fill: whitesmoke;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+}
+
+footer a {
+  display: flex;
+  text-decoration: none;
+  color: aliceblue;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/*# sourceMappingURL=main.css.map */

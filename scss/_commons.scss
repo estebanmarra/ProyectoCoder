@@ -1,6 +1,6 @@
 * {
-    font-family: $mainFont;
-    box-sizing: border-box;
+    $mainFont: 'Barlow', sans-serif;
+     box-sizing: border-box;
 }
 
 
@@ -10,12 +10,6 @@ body {
     background-attachment: local;
 }
 
-h1,
-h2 {
-    text-align: center;
-    $mainColor; 
-    font-size: 1, 4em;
-}
 
 p {
     padding: 1em;
