@@ -1,0 +1,58 @@
+.tienda {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "actions actions actions"
+        "filters prod1 prod1"
+        "filters prod2 prod3"
+        "filters prod2 prod4";
+    gap: 5px;
+    padding: 20px;
+    width: 100%;
+}
+
+.tienda .actions {
+    padding: 0 20px;
+    grid-area: actions;
+}
+
+.tienda .filters {
+    grid-area: filters;
+}
+
+.tienda .prod1,
+.tienda .prod2,
+.tienda .prod3,
+.tienda .prod4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    grid-area: auto;
+}
+
+.actions button:hover,
+.tienda .prod1 button:hover,
+.tienda .prod2 button:hover,
+.tienda .prod3 button:hover,
+.tienda .prod4 button:hover {
+    color: black;
+    background-color: rgb(237, 235, 129);
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+}
+
+button:hover,
+.tienda .prod1 button:hover,
+.tienda .prod2 button:hover,
+.tienda .prod3 button:hover,
+.tienda .prod4 button:hover {
+    color: black;
+    background-color: rgb(237, 235, 129);
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+}

@@ -1,0 +1,64 @@
+.filters {
+    padding: 0 20px 30px;
+}
+
+.filters a {
+    color: rgb(237, 233, 161);
+    font-size: 0.9em;
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+
+.filters a:hover {
+    color: rgb(209, 216, 130);
+}
+
+.filters span {
+    display: block;
+    color: rgb(235, 226, 157);
+    margin: 10px 0;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.filters label {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.filters select {
+    color: rgb(16, 15, 15);
+    border: none;
+    background-color: rgb(202, 211, 124);
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.filters li {
+    padding-left: 10px;
+    list-style-type: none;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.actions button:hover {
+    margin-left: 10px;
+    background-color: rgb(237, 235, 129);
+    color: rgb(16, 16, 16);
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+}
+
+.actions input {
+    padding: 6px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}

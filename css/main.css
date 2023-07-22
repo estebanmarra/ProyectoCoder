@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
+
 * {
- 
   box-sizing: border-box;
 }
 
@@ -15,6 +15,71 @@ p {
   color: aliceblue;
   font-size: 1.4em;
   line-height: 1.7;
+}
+
+.filters {
+  padding: 0 20px 30px;
+}
+
+.filters a {
+  color: rgb(237, 233, 161);
+  font-size: 0.9em;
+  text-decoration: none;
+  margin-bottom: 4px;
+}
+
+.filters a:hover {
+  color: rgb(209, 216, 130);
+}
+
+.filters span {
+  display: block;
+  color: rgb(235, 226, 157);
+  margin: 10px 0;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.filters label {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.filters select {
+  color: rgb(16, 15, 15);
+  border: none;
+  background-color: rgb(202, 211, 124);
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.filters li {
+  padding-left: 10px;
+  list-style-type: none;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.actions button:hover {
+  margin-left: 10px;
+  background-color: rgb(237, 235, 129);
+  color: rgb(16, 16, 16);
+  padding: 6px;
+  border: none;
+  border-radius: 3px;
+}
+
+.actions input {
+  padding: 6px;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(255, 255, 255);
 }
 
 .botonera {
@@ -39,6 +104,65 @@ p {
   text-decoration: none;
   line-height: 1, 7;
   padding: 16px;
+}
+
+.tienda {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "actions actions actions"
+    "filters prod1 prod1"
+    "filters prod2 prod3"
+    "filters prod2 prod4";
+  gap: 5px;
+  padding: 20px;
+  width: 100%;
+}
+
+.tienda .actions {
+  padding: 0 20px;
+  grid-area: actions;
+}
+
+.tienda .filters {
+  grid-area: filters;
+}
+
+.tienda .prod1,
+.tienda .prod2,
+.tienda .prod3,
+.tienda .prod4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  grid-area: auto;
+}
+
+.actions button:hover,
+.tienda .prod1 button:hover,
+.tienda .prod2 button:hover,
+.tienda .prod3 button:hover,
+.tienda .prod4 button:hover {
+  color: black;
+  background-color: rgb(237, 235, 129);
+  padding: 6px;
+  border: none;
+  border-radius: 3px;
+}
+
+button:hover,
+.tienda .prod1 button:hover,
+.tienda .prod2 button:hover,
+.tienda .prod3 button:hover,
+.tienda .prod4 button:hover {
+  color: black;
+  background-color: rgb(237, 235, 129);
+  padding: 6px;
+  border: none;
+  border-radius: 3px;
 }
 
 footer {
