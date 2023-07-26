@@ -8,4 +8,4 @@ User-Agent: Googlebot
 Disallow: /webmail
 
 User-Agent: Googlebot
-Disallow: /asd.php
+Disallow: /envio.php
