@@ -256,11 +256,15 @@ button:hover,
 
 @media (width < 768px) {
     .products figure {
-        width: 100%;
+        width: 250%;
+    }
+    .h1 h2{
+        text-align: left;
+     font-size: xx-small;
     }
 
     .products figure button {
-        width: 70%;
+        width: 150%;
     }
 
     .cuerpo {
@@ -301,5 +305,5 @@ button:hover,
     .tienda .prod3 button:hover,
     .tienda .prod4 button:hover {
         color: cornsilk;
-        background-color: black;
+    
     }
