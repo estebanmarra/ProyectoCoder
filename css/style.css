@@ -127,9 +127,6 @@ figure {
     display: inline-block;
 }
 
-.filters {
-    padding: 0 20px 30px;
-}
 
 .filters a {
     color: rgb(237, 233, 161);
@@ -202,7 +199,6 @@ figure {
         "filters prod2 prod3"
         "filters prod2 prod4";
     gap: 5px;
-    padding: 20px;
     width: 100%;
 }
 
