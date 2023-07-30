@@ -325,5 +325,11 @@ button:hover,
     .tienda .prod3 button:hover,
     .tienda .prod4 button:hover {
         color: cornsilk;
+    }
     
+    .error-message {
+        font-size: 20px;
+    }
+    .go-home {
+        font-size: 14px;
     }
