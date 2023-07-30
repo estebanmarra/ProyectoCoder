@@ -127,6 +127,9 @@ figure {
     display: inline-block;
 }
 
+.filters {
+    padding: 5px;
+}
 
 .filters a {
     color: rgb(237, 233, 161);
