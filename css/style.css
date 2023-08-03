@@ -206,6 +206,11 @@ figure {
     border: none;
     border-radius: 3px;
 }
+.buscador{
+    border-radius: none;
+    border-color: black;
+    color: yellow;
+}
 
 .actions input {
     padding: 6px;
