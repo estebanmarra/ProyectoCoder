@@ -275,9 +275,7 @@ button:hover,
 
 
 @media (width < 768px) {
-    .products figure {
-        width: 200%;
-    }
+   
     .h1 h2{
         text-align: left;
      font-size: xx-small;
