@@ -207,9 +207,22 @@ figure {
     border-radius: 3px;
 }
 .buscador{
-    border-radius: none;
-    border-color: black;
-    color: yellow;
+    border-bottom: none;
+    border-color: yellow;
+    color: black;
+    background-color: yellow;
+}
+.lupa{
+    border-bottom: none;
+    border-color: yellow;
+    color: black;
+    background-color: yellow;
+}
+.carrito {
+    border-bottom: none;
+    border-color: yellow;
+    color: black;
+    background-color: yellow;
 }
 
 .actions input {
