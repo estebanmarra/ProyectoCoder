@@ -100,6 +100,7 @@ footer a {
 div ul li {
     text-align: center;
 }
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -171,6 +172,7 @@ figure {
     letter-spacing: 1px;
     font-size: 0.8em;
     font-weight: 300;
+    text-align: left;
 }
 
 .filters label {
@@ -189,6 +191,7 @@ figure {
 .filters li {
     padding-left: 10px;
     list-style-type: none;
+    text-align: initial;
 }
 
 .actions {
@@ -206,28 +209,32 @@ figure {
     border: none;
     border-radius: 3px;
 }
-.buscador{
-    border-bottom: none;
-    border-color: yellow;
-    color: black;
-    background-color: yellow;
-}
-.lupa{
-    border-bottom: none;
-    border-color: yellow;
-    color: black;
-    background-color: yellow;
-}
-.carrito {
-    border-bottom: none;
+
+.buscador {
     border-color: yellow;
     color: black;
     background-color: yellow;
 }
 
+.lupa {
+    border-color: yellow;
+    color: black;
+    background-color: yellow;
+    border: black;
+
+}
+
+.carrito {
+    border-bottom: none;
+    border-color: yellow;
+    color: black;
+    background-color: yellow;
+    border: black;
+}
+
 .actions input {
     padding: 6px;
-    border-radius: 3px;
+    border-radius: 2px;
     border: none;
     background-color: rgb(255, 255, 255);
 }
@@ -293,10 +300,10 @@ button:hover,
 
 
 @media (width < 768px) {
-   
-    .h1 h2{
+
+    .h1 h2 {
         text-align: left;
-     font-size: xx-small;
+        font-size: xx-small;
     }
 
     .products figure button {
@@ -342,10 +349,11 @@ button:hover,
     .tienda .prod4 button:hover {
         color: cornsilk;
     }
-    
+
     .error-message {
         font-size: 20px;
     }
+
     .go-home {
         font-size: 14px;
     }
