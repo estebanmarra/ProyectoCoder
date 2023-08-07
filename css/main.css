@@ -1,6 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+
+$primary-color: aliceblue;
+$secondary-color: rgb(234, 240, 115, 0.3);
+$background-color: rgba(241, 241, 180, 0.2);
+$accent-color: rgb(237, 233, 161);
+$hover-color: rgb(209, 216, 130);
+$font-family: 'Barlow', sans-serif;
+$font-size: 1.4em;
 
 * {
+  font-family: $font-family;
+  margin: 0%;
+  padding: 0%;
   box-sizing: border-box;
 }
 
@@ -9,85 +20,19 @@ body {
   background-attachment: local;
 }
 
+h1,
+h2 {
+  text-align: center;
+  color: $primary-color;
+  font-size: 1.4em;
+}
+
 p {
   padding: 1em;
   text-align: center;
-  color: aliceblue;
-  font-size: 1.4em;
+  color: $primary-color;
+  font-size: $font-size;
   line-height: 1.7;
-}
-
-.filters {
-  padding: 0 20px 30px;
-}
-
-.filters a {
-  color: rgb(237, 233, 161);
-  font-size: 0.9em;
-  text-decoration: none;
-  margin-bottom: 4px;
-}
-
-.filters a:hover {
-  color: rgb(209, 216, 130);
-}
-
-.filters span {
-  display: block;
-  color: rgb(235, 226, 157);
-  margin: 10px 0;
-  letter-spacing: 1px;
-  font-size: 0.8em;
-  font-weight: 300;
-}
-
-.filters label {
-  font-size: 0.8em;
-  font-weight: 300;
-}
-
-.filters select {
-  color: rgb(16, 15, 15);
-  border: none;
-  background-color: rgb(202, 211, 124);
-  margin-bottom: 10px;
-  font-size: 1em;
-}
-
-.filters li {
-  padding-left: 10px;
-  list-style-type: none;
-}
-
-.actions {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin: 10px 0;
-}
-
-.actions button:hover {
-  margin-left: 10px;
-  background-color: rgb(237, 235, 129);
-  color: rgb(16, 16, 16);
-  padding: 6px;
-  border: none;
-  border-radius: 3px;
-}
-
-.actions input {
-  padding: 6px;
-  border-radius: 3px;
-  border: none;
-  background-color: rgb(255, 255, 255);
-}
-
-.botonera {
-  background-color: black;
-}
-
-.botoner img {
-  width: 150px;
 }
 
 .botonera img {
@@ -95,74 +40,44 @@ p {
 }
 
 .botonera {
-  background-color: rgba(234, 240, 115, 0.3);
+  background-color: $secondary-color;
 }
 
 .botonera a {
   color: black;
   text-align: center;
   text-decoration: none;
-  line-height: 1, 7;
+  line-height: 1.7;
   padding: 16px;
 }
 
-.tienda {
+.products {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
   grid-template-areas:
-    "actions actions actions"
-    "filters prod1 prod1"
-    "filters prod2 prod3"
-    "filters prod2 prod4";
+    "prod1 prod1"
+    "prod2 prod3"
+    "prod2 prod3";
   gap: 5px;
   padding: 20px;
   width: 100%;
 }
 
-.tienda .actions {
-  padding: 0 20px;
-  grid-area: actions;
+figure a {
+  text-decoration: none;
+  color: $primary-color;
 }
 
-.tienda .filters {
-  grid-area: filters;
+.container {
+  width: 90%;
+  margin: 0 auto;
 }
 
-.tienda .prod1,
-.tienda .prod2,
-.tienda .prod3,
-.tienda .prod4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 10px;
-  grid-area: auto;
-}
-
-.actions button:hover,
-.tienda .prod1 button:hover,
-.tienda .prod2 button:hover,
-.tienda .prod3 button:hover,
-.tienda .prod4 button:hover {
-  color: black;
-  background-color: rgb(237, 235, 129);
-  padding: 6px;
-  border: none;
-  border-radius: 3px;
-}
-
-button:hover,
-.tienda .prod1 button:hover,
-.tienda .prod2 button:hover,
-.tienda .prod3 button:hover,
-.tienda .prod4 button:hover {
-  color: black;
-  background-color: rgb(237, 235, 129);
-  padding: 6px;
-  border: none;
-  border-radius: 3px;
+main {
+  color: $primary-color;
+  text-align: center;
+  background-color: $background-color;
 }
 
 footer {
@@ -184,9 +99,192 @@ footer svg {
 footer a {
   display: flex;
   text-decoration: none;
-  color: aliceblue;
+  color: $primary-color;
   text-align: center;
   font-size: 1.2em;
+}
+
+div ul li {
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.error-image {
+  max-width: 300px;
+  margin: 30px auto;
+}
+
+.error-message {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.go-home {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+figure {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.image {
+  width: 50%;
+}
+
+.banner {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.local {
+  width: 90%;
+  display: inline-block;
+}
+
+.filters {
+  padding: 5px;
+
+  a {
+    color: $accent-color;
+    font-size: 0.9em;
+    text-decoration: none;
+    margin-bottom: 4px;
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+
+  span {
+    display: block;
+    color: rgb(235, 226, 157);
+    margin: 10px 0;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    font-weight: 300;
+    text-align: left;
+  }
+
+  label {
+    font-size: 0.8em;
+    font-weight: 300;
+  }
+
+  select {
+    color: rgb(16, 15, 15);
+    border: none;
+    background-color: rgb(202, 211, 124);
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+
+  li {
+    padding-left: 10px;
+    list-style-type: none;
+    text-align: initial;
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10px 0;
+
+  button:hover {
+    margin-left: 10px;
+    background-color: rgb(237, 235, 129);
+    color: rgb(16, 16, 16);
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+  }
+}
+
+.buscador {
+  border-color: yellow;
+  color: black;
+  background-color: yellow;
+}
+
+.lupa {
+  border-color: yellow;
+  color: black;
+  background-color: yellow;
+  border: black;
+}
+
+.carrito {
+  border-bottom: none;
+  border-color: yellow;
+  color: black;
+  background-color: yellow;
+  border: black;
+}
+
+.actions input {
+  padding: 6px;
+  border-radius: 2px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+}
+
+.tienda {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "actions actions actions"
+    "filters prod1 prod1"
+    "filters prod2 prod3"
+    "filters prod2 prod4";
+  gap: 5px;
+  width: 100%;
+
+  .actions {
+    padding: 0 20px;
+    grid-area: actions;
+  }
+
+  .filters {
+    grid-area: filters;
+  }
+
+  .prod1,
+  .prod2,
+  .prod3,
+  .prod4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    grid-area: auto;
+
+    button:hover {
+      color: black;
+      background-color: rgb(237, 235, 129);
+      padding: 6px;
+      border: none;
+      border-radius: 3px;
+    }
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
