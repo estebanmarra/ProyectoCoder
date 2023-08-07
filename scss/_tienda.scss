@@ -10,49 +10,50 @@
     gap: 5px;
     padding: 20px;
     width: 100%;
-}
 
-.actions {
-    padding: 0 20px;
-    grid-area: actions;
-}
 
-.filters {
-    grid-area: filters;
-}
+    .actions {
+        padding: 0 20px;
+        grid-area: actions;
+    }
 
-.tienda .prod1,
-.tienda .prod2,
-.tienda .prod3,
-.tienda .prod4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 10px;
-    grid-area: auto;
-}
+    .filters {
+        grid-area: filters;
+    }
 
-.actions button:hover,
-.tienda .prod1 button:hover,
-.tienda .prod2 button:hover,
-.tienda .prod3 button:hover,
-.tienda .prod4 button:hover {
-    color: black;
-    background-color: rgb(237, 235, 129);
-    padding: 6px;
-    border: none;
-    border-radius: 3px;
-}
+    .tienda .prod1,
+    .tienda .prod2,
+    .tienda .prod3,
+    .tienda .prod4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        grid-area: auto;
+    }
 
-button:hover,
-.tienda .prod1 button:hover,
-.tienda .prod2 button:hover,
-.tienda .prod3 button:hover,
-.tienda .prod4 button:hover {
-    color: black;
-    background-color: rgb(237, 235, 129);
-    padding: 6px;
-    border: none;
-    border-radius: 3px;
+    .actions button:hover,
+    .tienda .prod1 button:hover,
+    .tienda .prod2 button:hover,
+    .tienda .prod3 button:hover,
+    .tienda .prod4 button:hover {
+        color: black;
+        background-color: rgb(237, 235, 129);
+        padding: 6px;
+        border: none;
+        border-radius: 3px;
+    }
+
+    button:hover,
+    .tienda .prod1 button:hover,
+    .tienda .prod2 button:hover,
+    .tienda .prod3 button:hover,
+    .tienda .prod4 button:hover {
+        color: black;
+        background-color: rgb(237, 235, 129);
+        padding: 6px;
+        border: none;
+        border-radius: 3px;
+    }
 }

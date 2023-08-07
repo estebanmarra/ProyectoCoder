@@ -1,6 +1,7 @@
 * {
-    $mainFont: 'Barlow', sans-serif;
-     box-sizing: border-box;
+    $mainFont: 'Barlow',
+    sans-serif;
+    box-sizing: border-box;
 }
 
 
@@ -8,13 +9,14 @@
 body {
     background-image: url(../back/backround.jpeg);
     background-attachment: local;
-}
 
 
-p {
-    padding: 1em;
-    text-align: center;
-    color: aliceblue;
-    font-size: 1.4em;
-    line-height: 1.7;
+
+    p {
+        padding: 1em;
+        text-align: center;
+        color: aliceblue;
+        font-size: 1.4em;
+        line-height: 1.7;
+    }
 }
