@@ -334,13 +334,14 @@ button:hover,
 
     .tienda {
         display: grid;
-        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr;
         grid-template-areas:
-            "filters actions"
-            "filters prod1"
-            "filters prod2"
-            "filters prod3"
-            "filters prod4";
+            "filters"
+            "actions"
+            "prod1"
+            "prod2"
+            "prod3"
+            "prod4";
     }
 
     .tienda .prod1 button:hover,
