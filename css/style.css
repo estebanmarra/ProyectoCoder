@@ -335,7 +335,7 @@ button:hover,
     .tienda {
         display: grid;
         grid-template-columns: 1fr;
-       
+
     }
 
     .tienda .prod1 button:hover,
@@ -357,5 +357,4 @@ button:hover,
     .container {
         display: flex;
         flex-direction: column;
-
-            {
+    }
