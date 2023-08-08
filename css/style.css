@@ -335,13 +335,7 @@ button:hover,
     .tienda {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas:
-            "filters"
-            "actions"
-            "prod1"
-            "prod2"
-            "prod3"
-            "prod4";
+       
     }
 
     .tienda .prod1 button:hover,
@@ -351,6 +345,7 @@ button:hover,
         color: cornsilk;
     }
 
+
     .error-message {
         font-size: 20px;
     }
@@ -358,3 +353,9 @@ button:hover,
     .go-home {
         font-size: 14px;
     }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+            {
