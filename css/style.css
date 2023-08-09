@@ -338,6 +338,19 @@ button:hover,
 
     }
 
+    .products {
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto;
+        grid-template-areas:
+    
+            "prod1"
+            "prod2"
+            "prod3";
+        gap: 5px;
+        padding: 20px;
+        width: 100%;
+    }
     .tienda .prod1 button:hover,
     .tienda .prod2 button:hover,
     .tienda .prod3 button:hover,
